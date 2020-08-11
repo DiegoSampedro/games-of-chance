@@ -72,7 +72,7 @@ def roulette(guess, bet):
         print("Your bet should be above 0")
         return 0
     print("------------------")
-    num = random.randint(1, 36)
+    num = random.randint(0, 36)
     if num % 2 == 0 and guess == "even" and num != 0:
         print("You have won! The number is even! You get {bet} dollars".format(bet = bet / 2))
         return bet / 2
