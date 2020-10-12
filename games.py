@@ -2,9 +2,9 @@ import random
 
 money = 100
 
-#Write your game of chance functions here
+
 def flip_coin(side, bet):
-    if bet < 0:
+    if bet <= 0:
         print("Your bet should be above 0")
         return 0
     print("------------------")
@@ -25,7 +25,7 @@ def flip_coin(side, bet):
     print("------------------")
     
 def cho_han(guess, bet):
-    if bet < 0:
+    if bet <= 0:
         print("Your bet should be above 0")
         return 0
     print("------------------")
@@ -48,7 +48,7 @@ def cho_han(guess, bet):
 
 
 def pick_cards(bet):
-    if bet < 0:
+    if bet <= 0:
         print("Your bet should be above 0")
         return 0
     print("------------------")
@@ -68,7 +68,7 @@ def pick_cards(bet):
     print("------------------")
 
 def roulette(guess, bet):
-    if bet < 0:
+    if bet <= 0:
         print("Your bet should be above 0")
         return 0
     print("------------------")
@@ -102,7 +102,7 @@ def roulette(guess, bet):
         return -bet
     print("------------------")
 
-#Call your game of chance functions here
+
 money += flip_coin("Heads", 10)
 money += cho_han("odd", 15)
 money += pick_cards(20)
